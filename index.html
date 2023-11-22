@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC Motors</title>
+    <link rel="shortcut icon" type="image/png" href="./images/em.png"> <!--Inserindo ícone na aba do navegador-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> <!--link do carrossel no slick-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <div class="container container-flex">
+            <img src="./images/ebacmotors.png" alt="logotipo ebac motors">
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav> <!--Inserindo menu de navegação-->
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#sobre-a-loja">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#destaques">Destaques</a>
+                    </li>
+                    <li>
+                        <a href="#promocoes">Promoções</a>
+                    </li>
+                    <li>
+                        <a href="#contatos">Contatos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header> 
+    <div id="carrossel-imagens"><!--Criando o carrossel-->
+        <img src="./images/slide1.png" alt="Porshe 911 Carrera">
+        <img src="./images/slide2.png" alt="Uma BMW">
+        <img src="./images/slide3.png" alt="Um Ford GT40">
+    </div>
+
+    <section id="sobre-a-loja"> <!--Construindo o sobre-->
+        <div class="container container-flex">
+            <img src="./images/loja.jpg" alt="Imagem interna da loja EBAC Motors">
+            <div>
+            <h2>Sobre a EBAC Motors</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorem sit molestiae dolorum sint? Quaerat explicabo blanditiis totam labore molestias dolorum ducimus, nemo quisquam harum quis id ex perferendis voluptatem?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorem sit molestiae dolorum sint? Quaerat explicabo blanditiis totam labore molestias dolorum ducimus, nemo quisquam harum quis id ex perferendis voluptatem?
+            </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="destaques"> <!--seção em destaque-->
+        <div class="container">
+            <h2>Destaques</h2>
+            <ul class="container-flex lista-veiculos"> <!--Aproveitando a configuração em linha-->
+                <li>
+                    <img src="./images/carro-bmw.png" alt="Carro BMW">
+                    <h3>Linda BMW</h3>
+                    <p>
+                        Câmbio automático, 4 portas, vidros e travas elétricas
+                    </p>
+                    <div class="price">
+                        <strong> R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central"> <!--Foi criada essa classe para melhor distribuir os itens da tabela-->
+                    <img src="./images/carro-bmw.png" alt="Carro BMW">
+                    <h3>BMW Nova</h3>
+                    <p>
+                        Câmbio automático, 4 portas, vidros e travas elétricas
+                    </p>
+                    <div class="price">
+                        <strong> R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/carro-bmw.png" alt="Carro BMW">
+                    <h3>BMW Cinza</h3>
+                    <p>
+                        Câmbio automático, 4 portas, vidros e travas elétricas
+                    </p>
+                    <div class="price">
+                        <strong> R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="promocoes"> <!--seção promoções-->
+        <div class="container">
+            <h2>Promoções</h2>
+            <ul class="container-flex lista-veiculos"> <!--Aproveitando a configuração em linha-->
+                <li>
+                    <img src="./images/fusca.png" alt="Carro BMW">
+                    <h3>Fusca 73 - Colecionador</h3>
+                    <p>
+                        Todo original e em perfeito estado de conservação.
+                    </p>
+                    <div class="price"> <!--Foi criada essa classe para poder separar esse valo do promocional-->
+                        <del>R$ 60.000,00</del>
+                        <strong> R$ 50.000,00</strong> <!--Adicionando negrito-->
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central"> <!--Foi criada essa classe para melhor distribuir os itens da tabela-->
+                    <img src="./images/carro-bmw.png" alt="Carro BMW">
+                    <h3>Linda BMW Conversível</h3>
+                    <p>
+                        Câmbio automático, 4 portas, vidros e travas elétricas
+                    </p>
+                    <div class="price">
+                        <del>R$ 100.000,00</del> <!--del adiciona o risco no preço-->
+                        <strong> R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/moto-bmw.png" alt="Carro BMW">
+                    <h3>Moto BMW</h3>
+                    <p>
+                        Sinta a liberdade com 210 cavalos de pura emoção.
+                    </p>
+                    <div class="price">
+                        <del>R$ 40.000,00</del>
+                        <strong> R$ 30.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contatos"><!--seção contatos-->
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form> <!--criando o formulário de uma forma diferente-->
+                <div class="form-campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                <div class="form-campo">
+                    <label for="email">e-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-campo">
+                    <label for="veiculo-interesse">Veículo de interesse:</label>
+                    <input type="text" id="veiculo-interesse" name="veiculoDeInteresse">
+                </div>
+                <div class="form-campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer> <!--Inserindo o rodapé-->
+        <div class="container container-flex">
+            <p>
+                2023 &copy; EBAC Motors - Todos os direitos reservados <!-- &copy; insere © ná página -->
+            </p>
+            <ul class="container-flex">
+                <li>
+                    <a href="#">
+                        <img src="./icones/facebook.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/youtube.png" alt="YouTube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!--Inserindo o pluguin do carrossel-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script> <!--Inserindo o pluguin de máscaras-->
+    <script src="./js/jquery.validate.min.js"></script> <!--Inserindo o pluguin de validação do formulário-->
+    <script src="./js/messages_pt_BR.min.js"></script> <!--Inserindo a tradução das mensagens-->
+    <script src="./js/main.js"></script>
+</body>
+</html>
